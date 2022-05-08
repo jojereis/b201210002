@@ -31,7 +31,6 @@ function bosmu()
     var mail=document.forms["myform"][nameler[2]].value;
     var tel=document.forms["myform"][nameler[1]].value;
     var bosluksuz=tel.replace(/\s+/g, '');
-    alert(bosluksuz);
     if(!(bosluksuz.length>9&&bosluksuz.length<12))
     { 
       document.getElementById("telefon").innerHTML="TELEFON NUMARASI 9-11 KARAKTER OLABİLİR!!!";
