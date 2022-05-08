@@ -46,7 +46,6 @@ function bosmu()
       document.getElementById("telefon").innerHTML="LÜTFEN DOĞRU FORMATTA TELEFON NUMARASI GİRİNİZ!!!";
       return false;
     }
-    document.getElementById("sifre2").innerHTML="BOŞ BIRAKILAMAZ!!!";
     if(!(document.forms["myform"][nameler[4]].value==document.forms["myform"][nameler[3]].value) && !(document.forms["myform"][nameler[4]].value==""))
     {
      document.getElementById("sifre2").innerHTML="GİRİLEN ŞİFRELER AYNI DEĞİL!!!";
