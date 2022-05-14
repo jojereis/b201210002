@@ -1,9 +1,8 @@
-  
+
 function bosmu()
 {
-    var nameler=["adsoyad","telefon","mail","ilksifre","ikisifre","sehirler","dogumtarihi","okuladi","adres"];
-    var idler= ["adsoyad","telefon","mail","sifre1","sifre2","sehir","dogumtarihi","okuladi","adres"];  
-    
+  var nameler=["adsoyad","telefon","mail","ilksifre","ikisifre","sehirler","dogumtarihi","okuladi","adres"];
+  var idler= ["adsoyad","telefon","mail","sifre1","sifre2","sehir","dogumtarihi","okuladi","adres"]; 
     for(var i=0; i<nameler.length; i++)
     {
         document.getElementById(idler[i]).innerHTML=""; 
@@ -57,21 +56,17 @@ function bosmu()
     }    
     
 }
-function temizle()
+
+  function temizle()
  {
-   var nameler=["adsoyad","telefon","mail","ilksifre","ikisifre","dogumtarihi","okuladi","adres","eklenenler","hobi1","hobi2","hobi3","hobi4",];
-   var idler= ["adsoyad","telefon","mail","sifre1","sifre2","sehir","dogumtarihi","okuladi","adres"];  
-   for(var i=0; i<nameler.length; i++)
-   {
-       document.forms["myform"][nameler[i]].value="";   
-   }
-   for(var i=0; i<idler.length; i++)
-   {
-       document.getElementById(idler[i]).innerHTML=""; 
-         
-   }
-   document.forms["myform"]["cinsiyet"].value="erkek";
-   document.forms["myform"]["egitim"].value="ortaokul";
-   document.forms["myform"]["sehirler"].value="ankara";
-   
+   document.getElementById("adsoyad").innerHTML="";
+   document.getElementById("telefon").innerHTML="";
+   document.getElementById("mail").innerHTML="";
+   document.getElementById("sifre1").innerHTML="";
+   document.getElementById("sifre2").innerHTML="";
+   document.getElementById("sehir").innerHTML="";
+   document.getElementById("dogumtarihi").innerHTML="";
+   document.getElementById("okuladi").innerHTML="";
+   document.getElementById("adres").innerHTML="";
+  
  }
