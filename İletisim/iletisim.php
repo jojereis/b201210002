@@ -5,12 +5,47 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 echo "<h1 class='display-4' id='yaziilk' >HOŞGELDİNİZ<h1>";
 echo "<h1 class='display-4'>KAYIT İŞLEMİNİZ BAŞARIYLA GERÇEKLEŞMİŞTİR</h1>";
-echo "<h1 class='display-4'>ANA SAYFAYA YÖNLENDİRİLİYORSUNUZ</h1>";
-header("Refresh: 2; url=../index.html");
+$adsoyad=$_POST["adsoyad"];
+$telefon=$_POST["telefon"];
+$mail=$_POST["mail"];
+$sifre=$_POST["ilksifre"];
+$dogumyeri=$_POST["dogumyeri"];
+$dogumtarihi=$_POST["dogumtarihi"];
+$cinsiyet=$_POST["cinsiyet"];
+if(isset($_POST["hobi"]))
+{
+$hobiler=$_POST["hobi"];
+}
+$okul=$_POST["egitim"];
+$okuladi=$_POST["okuladi"];
+$adres=$_POST["adres"];
+$eklenenler=$_POST["eklenenler"];
+echo"<h1 class='display-6'>KAYITLI BİLGİLERİNİZ</h1>";
+echo"AD SOYAD: ".$adsoyad."<br>";
+echo"TELEFON: ".$telefon."<br>";
+echo"MAİL: ".$mail."<br>";
+echo"ŞİFRE:".$sifre."<br>";
+echo"DOĞUM YERİ:".$dogumyeri."<br>";
+echo"DOĞUM TARİHİ:".$dogumtarihi."<br>";
+echo"CİNSİYET:".$cinsiyet."<br>";
+echo "HOBİLER : <br>";
+foreach($hobiler as $hobi) {
+    echo  $hobi . '<br/>';
+}
+echo"OKUL:".$okul."<br>";
+echo"OKUL ADI:".$okuladi."<br>";
+echo"ADRES:".$adres."<br>";
+echo"EKLENENLER:".$eklenenler."<br>";
+
+
+echo "<h1 class='display-4'>ANA SAYFAYA YÖNLENDİRİLİYORSUNUZ. LÜTFEN BEKLEYİN.</h1><br><br><br>";
+header("Refresh: 10; url=../index.html");
+
 }
 else
 {
     echo "HATA";
+    header("Refresh: 2; url=iletisim.html");
 }
 ?>
 <style type="text/css" >
