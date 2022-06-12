@@ -1,67 +1,62 @@
-body{ overflow: hidden;}
+
 .ust{ opacity: 1; 
-    top: 15%; 
-    left: 500px;
+    margin: 7% 35% 0 35%; 
      position: absolute;
-    animation: Move 2s ease-in-out;
+    animation: Move 2s ease-in-out 0.5s;
     }
 .alt{ opacity: 1; 
-    top: 55%; 
-    left: 500px; 
+    margin: 26% 35% 0 35%; 
     transform: rotateX(180deg); 
+    
     position: absolute;
-    animation: Movea 2s ease-in-out;
+    animation: Movea 2s ease-in-out 0.5s ;
    
 }
     
-.yazi{ opacity: 1; 
+.yazi{ opacity: 1;
     color: blue; 
-    font-size: 80px; 
-    top: 20%; 
-    left: 483px; 
+    margin: 9% 35% 0 34%;
     position: absolute;
      letter-spacing: normal; 
-     animation: Movey 1s ease-in-out;
+     animation: Movey 1s ease-in-out 0.5s;
 }
+
 img{width: 100%;}
 
 @keyframes Move{
     0%{ 
-        top: 15%;
+        margin: 7% 35% 0 35%;
         
     }
     50%{
-        top:5%;
+        margin: 1% 35% 0 35%;
     }
     100%{
-        top:15%;
+        margin: 7% 35% 0 35%;
     }
 }
 @keyframes Movea{
     0%{ 
-        top: 55%;
+        margin: 26% 35% 0 35%;
     }
     50%{
-        top: 65%;
+        margin: 32% 35% 0 35%;
     }
     100%{
-        top: 55%;
+        margin: 26% 35% 0 35%;
     }
 }
 @keyframes Movey{
     0%{   letter-spacing: normal;
-          left: 483px;
+        margin: 9% 35% 0 34%;
           
     }
     50%{
-        left: 183px;
-        letter-spacing: 300px;
-        
-        
+        margin: 9% 35% 0 15%;
+        letter-spacing: 19vw;  
     }
-
     100%{
         letter-spacing: normal;
-        left: 483px;
+        margin: 9% 35% 0 34%;
     }
 }
