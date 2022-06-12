@@ -39,7 +39,7 @@ echo"EKLENENLER:".$eklenenler."<br>";
 
 
 echo "<h1 class='display-4'>ANA SAYFAYA YÖNLENDİRİLİYORSUNUZ. LÜTFEN BEKLEYİN.</h1><br><br><br>";
-header("Refresh: 10; url=../index.html");
+header("Refresh: 10; url=../index2.html");
 
 }
 else

@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     if($mail=="b201210002@sakarya.edu.tr" && $sifre=="b201210002")
     {
         echo "<h1 class='display-2'> Hoşgeldin B201210002 </h1>";
-        header("Refresh: 2; url=../index.html");
+        header("Refresh: 2; url=../index2.html");
     }
     else
     {
